@@ -26,7 +26,7 @@ class TV:
         if (1 <= canal) and (canal <= 120) and self._estado:
             self._canal = canal
 
-    @staticmethod
+    @classmethod
     def setNumTV(cls, numTV):
         cls._numTV = numTV
 
@@ -49,7 +49,7 @@ class TV:
     def getEstado(self):
         return self._estado
 
-    @staticmethod
+    @classmethod
     def getNumTV(cls):
         return cls._numTV
 
@@ -64,7 +64,7 @@ class TV:
         self.setCanal(self._canal + 1)
 
     def canalDown(self):
-        self.setCanal(self.canal - 1)
+        self.setCanal(self._canal - 1)
 
     def volumenUp(self):
         self.setVolumen(self._volumen + 1)
