@@ -55,10 +55,10 @@ class TV:
 
     # Methods
     def turnOn(self):
-        self.estado = True
+        self._estado = True
 
     def turnOff(self):
-        self.estado = False
+        self._estado = False
 
     def canalUp(self):
         self.setCanal(self._canal + 1)
